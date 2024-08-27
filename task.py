@@ -6,6 +6,8 @@ from yolov5.detect import run
 import os
 import matplotlib.pyplot as plt
 
+os.system('git clone https://github.com/ultralytics/yolov5')
+
 model_type = st.radio('Select model:', ['YOLOv5s', 'YOLOv5x'])
 uploaded_file = st.file_uploader('Select photo for object detection', type=['jpg', 'jpeg', 'png'])
 
